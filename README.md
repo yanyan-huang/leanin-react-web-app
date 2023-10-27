@@ -1,12 +1,9 @@
 # CS5500 Foundation of Software Engineering
-InStructor: Shivakumar Mathapathi
+Instructor: Shivakumar Mathapathi
 
 ### Author:
 Created By: 
-[Yanyan Huang]
-[Yuanhao Xu]
-[Siran Cao]
-[Chuanzhao Huang]
+Yanyan Huang, Yuanhao Xu, Siran Cao, Chuanzhao Huang 
 
 # Getting Started with Create React App
 
