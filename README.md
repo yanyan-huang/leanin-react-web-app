@@ -1,3 +1,13 @@
+# CS5500 Foundation of Software Engineering
+InStructor: Shivakumar Mathapathi
+
+### Author:
+Created By: 
+[Yanyan Huang]
+[Yuanhao Xu]
+[Siran Cao]
+[Chuanzhao Huang]
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
