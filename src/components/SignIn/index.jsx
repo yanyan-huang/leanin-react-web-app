@@ -9,17 +9,17 @@
 // import { updateUser } from '../Features/Profile/user-reducer.jsx';
 // import { recordCurrentUserThunk } from '../../services/user-thunk.js';
 // import * as ROUTES from '../../constants/routes';
-//
+
 // function SignIn() {
 //   const navigate = useNavigate();
 //   const dispatch = useDispatch();
 //   const { user_id: email, user_password: password } = useSelector(
 //     (state) => state.login
 //   );
-//
+
 //   const onLogin = async (e) => {
 //     e.preventDefault();
-//
+
 //     try {
 //       const userCredential = await signInWithEmailAndPassword(
 //         auth,
@@ -40,19 +40,19 @@
 //       const errorMessage = error.message;
 //       console.log(errorCode, errorMessage);
 //     }
-//
+
 //   };
-//
+
 //   const emailOnChange = (event) => {
 //     dispatch(setUpUserId(event.target.value));
 //   };
-//
+
 //   const passwordOnChange = (event) => {
 //     dispatch(setUpUserPassword(event.target.value));
 //   };
-//
+
 //   const submitStatus = useSelector((state) => state.login.submitStatus);
-//
+
 //   return (
 //     <div className="Auth-form-container">
 //   <form className="Auth-form">
@@ -76,8 +76,8 @@
 //           onChange={passwordOnChange}
 //         />
 //       </div>
-//
-//
+
+
 //       <div className="d-grid gap-2 mt-3">
 //         <button
 //           type="submit"
@@ -96,5 +96,5 @@
 // </div>
 //   );
 // }
-//
+
 // export default SignIn;
