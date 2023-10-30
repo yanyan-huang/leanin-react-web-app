@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import useFetchJobs from 'customhooks/fetchJob';
+import useFetchJobs from "../../../customhooks/fetchJob";
 import JobKeyFacts from '../JobSummaryList/job-key-facts';
 import CompanyImage from '../JobSummaryList/company-image';
 // import {saveJob} from '../../Features/AppliedSavedJobs/saved-jobs-reducer.jsx';
@@ -10,7 +10,7 @@ import {
   removeSavedJob,
 } from '../../Features/AppliedSavedJobs/saved-jobs-reducer';
 import { addAppliedJob } from "../../Features/AppliedSavedJobs/applied-jobs-reducer";
-import { addUserAppliedJobs, addUserSavedJobs, removeUserSavedJobs } from "services/user-service.js";
+import { addUserAppliedJobs, addUserSavedJobs, removeUserSavedJobs } from "../../../services/user-service.js";
 
 
 function JobDetails() {

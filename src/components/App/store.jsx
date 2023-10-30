@@ -9,7 +9,7 @@ import experienceReducer from '../Features/Profile/experience-reducer';
 import AppliedJobsReducer from '../Features/AppliedSavedJobs/applied-jobs-reducer';
 import SavedJobsReducer from '../Features/AppliedSavedJobs/saved-jobs-reducer';
 import jobsReducer from '../../reducers/jobs-reducer';
-// import searchReducer from '../../reducers/search-reducer';
+import searchReducer from '../../reducers/search-reducer';
 
 // import RecruiterJobsReducer from '../Home/reducer/RecruiterJobs-reducer';
 import userReducer from '../Features/Profile/user-reducer';
@@ -31,6 +31,6 @@ export default configureStore({
         // users: usersReducer,
         // postjobs: postJobReducer,
         // company: companyReducer,
-        // searchTerm: searchReducer,
+        searchTerm: searchReducer,
     },
 });

@@ -1,7 +1,7 @@
 import { LinkContainer } from 'react-router-bootstrap';
 import Nav from 'react-bootstrap/Nav';
-import COMPANY_ID from 'constants/company';
-import * as ROUTES from 'constants/routes';
+import COMPANY_ID from '../../../constants/company';
+import * as ROUTES from '../../../constants/routes';
 import { convertISODate } from '../../../utils/timeUtil';
 
 function JobKeyFacts(job) {

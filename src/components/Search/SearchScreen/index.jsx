@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Fuse from 'fuse.js';
 import { useSelector, useDispatch } from 'react-redux';
-import useFetchJobs from 'customhooks/fetchJob';
+import useFetchJobs from "../../../customhooks/fetchJob";
 import { useNavigate } from 'react-router';
 import { useLocation } from 'react-router-dom';
 import SearchBar from './search-bar';
