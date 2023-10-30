@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-//import JobSummaryItem from '../../Search/JobSummaryList/job-summary-item';
+import JobSummaryItem from '../../Search/JobSummaryList/job-summary-item';
 
 function RecentJobList() {
   const { jobs } = useSelector((state) => state.DBjobs);

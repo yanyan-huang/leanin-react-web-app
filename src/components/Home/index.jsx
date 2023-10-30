@@ -1,4 +1,4 @@
-//import { signOut } from 'firebase/auth';
+import { signOut } from 'firebase/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import useFetchJobs from '../../customhooks/fetchJob';
