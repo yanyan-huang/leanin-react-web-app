@@ -28,15 +28,15 @@ function App() {
                     {/*<Route exact path={ROUTES.SEARCH} element={<SearchPage />} />*/}
                     {/*<Route exact path={`${ROUTES.SEARCHDETAILS}/:jobId`} element={<SearchDetailsPage />}/>*/}
                     {/*<Route exact path={ROUTES.SIGN_UP} element={<SignUpPage />} />*/}
-                    <Route exact path={ROUTES.SIGN_IN} element={<SignInPage />} />
+                    {/*<Route exact path={ROUTES.SIGN_IN} element={<SignInPage />} />*/}
                     {/*<Route exact path={ROUTES.SIGN_OUT} element={<SignOutPage />} />*/}
                     {/*<Route exact path={ROUTES.PASSWORD_FORGET} element={<PasswordForgetPage />}/>*/}
-                    {/*<Route exact path={ROUTES.PROFILE} element={<ProfilePage />} />*/}
-                    {/*<Route exact path={ROUTES.EDITPROFILE} element={<EditProfileScreen />}/>*/}
-                    {/*<Route exact path={ROUTES.ADDEXPERIENCE} element={<AddExperienceScreen />}/>*/}
-                    {/*<Route exact path={ROUTES.ADDEDUCATION} element={<AddEducationScreen />}/>*/}
-                    {/*<Route path={`${ROUTES.PROFILE}/:userId`} element={<ProfilePage />} />*/}
-                    {/*<Route exact path={ROUTES.COMPANY_PROFILE} element={<CompanyProfilePage />}/>*/}
+                    <Route exact path={ROUTES.PROFILE} element={<ProfilePage />} />
+                    <Route exact path={ROUTES.EDITPROFILE} element={<EditProfileScreen />}/>
+                    <Route exact path={ROUTES.ADDEXPERIENCE} element={<AddExperienceScreen />}/>
+                    <Route exact path={ROUTES.ADDEDUCATION} element={<AddEducationScreen />}/>
+                    <Route path={`${ROUTES.PROFILE}/:userId`} element={<ProfilePage />} />
+                    <Route exact path={ROUTES.COMPANY_PROFILE} element={<CompanyProfilePage />}/>
                     {/*<Route exact path={ROUTES.EDIT_COMPANY_PROFILE} element={<EditCompanyProfileScreen />}/>*/}
                     {/*<Route exact path={`${ROUTES.COMPANY_PROFILE}/:companyId`}element={<CompanyProfilePage />}/>*/}
                 </Routes>

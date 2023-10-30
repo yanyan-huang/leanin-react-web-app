@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const SERVER_ADDRESS = import.meta.env.VITE_API_SERVER;
+
+const SERVER_ADDRESS = process.env.VITE_API_SERVER;
 
 const USER_API = `${SERVER_ADDRESS}/users`;
 

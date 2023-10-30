@@ -14,11 +14,12 @@ export const findUserThunk = createAsyncThunk(
     return user;}
 );
 
-export const deleteAuthUserThunk = createAsyncThunk(
-  'users/delete', async (uid) => {
-    await userService.deleteAuthUser(uid);
-    return id;}
-);
+// only needed under admin mode, comment this first
+// export const deleteAuthUserThunk = createAsyncThunk(
+//   'users/delete', async (uid) => {
+//     await userService.deleteAuthUser(uid);
+//     return id;}
+// );
 
 export const updateUserThunk = createAsyncThunk(
   'users/update', async (newUser) => {

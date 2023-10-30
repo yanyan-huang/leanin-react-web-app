@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-const SERVER_ADDRESS = import.meta.env.VITE_API_SERVER;
+const SERVER_ADDRESS = process.env.VITE_API_SERVER;
 
-const JOB_SEARCH_API = import.meta.env.VITE_JOB_SEARCH_SERVER;
+const JOB_SEARCH_API = process.env.VITE_JOB_SEARCH_SERVER;
 
 const JOB_API = `${SERVER_ADDRESS}/jobs`;
 
