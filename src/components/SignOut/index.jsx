@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { signOut } from 'firebase/auth';
 import { auth } from '../Firebase/firebase';
 import { removeUser } from '../Features/Profile/user-reducer';
-import { clearExperience } from "components/Features/Profile/experience-reducer.jsx";
+import { clearExperience } from "../../components/Features/Profile/experience-reducer.jsx";
 import { clearEducation } from "../../components/Features/Profile/education-reducer.js";
 import { clearSavedJobs } from "../../components/Features/AppliedSavedJobs/saved-jobs-reducer.jsx";
 import { clearAppliedJobs } from "../../components/Features/AppliedSavedJobs/applied-jobs-reducer.jsx";
