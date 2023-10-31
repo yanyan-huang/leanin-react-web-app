@@ -3,7 +3,6 @@ import { signInWithEmailAndPassword } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { auth } from '../Firebase/firebase';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { findUser } from '../../services/user-service';
 import { setUpUserId, setUpUserPassword } from '../Features/Login/LoginSlice';
 import { updateUser } from '../Features/Profile/user-reducer.jsx';
