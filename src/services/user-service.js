@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-const SERVER_ADDRESS = process.env.VITE_API_SERVER;
+const SERVER_ADDRESS = 'http://localhost:8080';
 
 const USER_API = `${SERVER_ADDRESS}/users`;
 

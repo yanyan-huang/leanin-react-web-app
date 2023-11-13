@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-const SERVER_ADDRESS = process.env.VITE_API_SERVER;
+const SERVER_ADDRESS = 'http://localhost:8080';
 
-const JOB_SEARCH_API = process.env.VITE_JOB_SEARCH_SERVER;
+const JOB_SEARCH_API = 'https://64431b3090738aa7c06b899f.mockapi.io/api/v1/';
 
 const JOB_API = `${SERVER_ADDRESS}/jobs`;
 
