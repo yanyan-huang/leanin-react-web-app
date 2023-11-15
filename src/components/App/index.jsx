@@ -1,4 +1,4 @@
-/* eslint-disable import/extensions */
+/* eslint-disable */
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navigation from '../Navigation/HomeNav';
@@ -37,8 +37,8 @@ function App() {
                     <Route exact path={ROUTES.ADDEDUCATION} element={<AddEducationScreen />}/>
                     <Route path={`${ROUTES.PROFILE}/:userId`} element={<ProfilePage />} />
                     <Route exact path={ROUTES.COMPANY_PROFILE} element={<CompanyProfilePage />}/>
-                    {/*<Route exact path={ROUTES.EDIT_COMPANY_PROFILE} element={<EditCompanyProfileScreen />}/>*/}
-                    {/*<Route exact path={`${ROUTES.COMPANY_PROFILE}/:companyId`}element={<CompanyProfilePage />}/>*/}
+                    <Route exact path={ROUTES.EDIT_COMPANY_PROFILE} element={<EditCompanyProfileScreen />}/>
+                    <Route exact path={`${ROUTES.COMPANY_PROFILE}/:companyId`}element={<CompanyProfilePage />}/>
                 </Routes>
             </div>
         </BrowserRouter>

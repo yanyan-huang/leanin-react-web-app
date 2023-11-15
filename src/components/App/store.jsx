@@ -4,7 +4,7 @@ import loginReducer from '../Features/Login/LoginSlice';
 import signupReducer from '../Features/SignUp/SignUpSlice';
 import educationReducer from '../Features/Profile/education-reducer';
 
-// import postJobReducer from '../Features/CompanyHome/postJob-reducer';
+import postJobReducer from '../Features/CompanyHome/postJob-reducer';
 import experienceReducer from '../Features/Profile/experience-reducer';
 import AppliedJobsReducer from '../Features/AppliedSavedJobs/applied-jobs-reducer';
 import SavedJobsReducer from '../Features/AppliedSavedJobs/saved-jobs-reducer';
@@ -14,7 +14,7 @@ import searchReducer from '../../reducers/search-reducer';
 // import RecruiterJobsReducer from '../Home/reducer/RecruiterJobs-reducer';
 import userReducer from '../Features/Profile/user-reducer';
 // import usersReducer from '../Features/admin/users-reducer';
-// import companyReducer from '../Features/Company/company-reducer';
+import companyReducer from '../Features/Company/company-reducer';
 
 export default configureStore({
     reducer: {
@@ -29,8 +29,8 @@ export default configureStore({
         DBjobs: DBjobsReducer,
         // Recruiterjobs: RecruiterJobsReducer,
         // users: usersReducer,
-        // postjobs: postJobReducer,
-        // company: companyReducer,
+        postjobs: postJobReducer,
+        company: companyReducer,
         searchTerm: searchReducer,
     },
 });

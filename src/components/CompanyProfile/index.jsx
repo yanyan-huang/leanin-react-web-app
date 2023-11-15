@@ -7,7 +7,7 @@ import { updateJob } from '../../reducers/jobs-reducer';
 import { findCompany } from '../../services/company-service';
 import { getAllJobs } from '../../services/job-service';
 import { findCompanyThunk } from '../../services/company-thunk';
-// import RecentJobList from '../Home/recentJobLists/index';
+import RecentJobList from '../Home/recentJobLists/index';
 import CompanyJobLists from './compnayJobLists.jsx';
 
 function CompanyProfile() {
