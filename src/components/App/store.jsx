@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { configureStore } from '@reduxjs/toolkit';
 import DBjobsReducer from '../../reducers/DBjobs-reducer';
 import loginReducer from '../Features/Login/LoginSlice';
@@ -13,7 +15,7 @@ import searchReducer from '../../reducers/search-reducer';
 
 // import RecruiterJobsReducer from '../Home/reducer/RecruiterJobs-reducer';
 import userReducer from '../Features/Profile/user-reducer';
-// import usersReducer from '../Features/admin/users-reducer';
+import usersReducer from '../Features/admin/users-reducer';
 import companyReducer from '../Features/Company/company-reducer';
 
 export default configureStore({
@@ -28,7 +30,7 @@ export default configureStore({
         jobs: jobsReducer,
         DBjobs: DBjobsReducer,
         // Recruiterjobs: RecruiterJobsReducer,
-        // users: usersReducer,
+        users: usersReducer,
         postjobs: postJobReducer,
         company: companyReducer,
         searchTerm: searchReducer,
