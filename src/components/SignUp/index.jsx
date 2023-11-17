@@ -1,11 +1,10 @@
-/* eslint-disable */
-import { useNavigate } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
-import { useState, useEffect } from 'react';
-import { getAllCompanies } from '../../services/company-service';
-import Dropdown from 'react-bootstrap/Dropdown';
-import Form from 'react-bootstrap/Form';
-import DropdownButton from 'react-bootstrap/DropdownButton';
+import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { useState, useEffect } from "react";
+import Dropdown from "react-bootstrap/Dropdown";
+import Form from "react-bootstrap/Form";
+import DropdownButton from "react-bootstrap/DropdownButton";
+import { getAllCompanies } from "../../services/company-service";
 import {
   checkEmailAddress,
   checkFirstName,
@@ -15,15 +14,15 @@ import {
   updateOrgnization,
   updateUserRole,
   updateCompanyId,
-} from '../Features/SignUp/SignUpSlice';
-import { createUser } from '../../services/user-service';
+} from "../Features/SignUp/SignUpSlice";
+import { createUser } from "../../services/user-service";
 
 function Signup() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const [selectedButton, setSelectedButton] = useState('user');
+  const [selectedButton, setSelectedButton] = useState("user");
   const [companyList, setCompanyList] = useState([]);
-  const [selectedOption, setSelectedOption] = useState('Plesae select');
+  const [selectedOption, setSelectedOption] = useState("Plesae select");
   const handleFirstNameChange = (event) => {
     dispatch(checkFirstName(event.target.value));
   };
@@ -46,8 +45,8 @@ function Signup() {
 
   const handleRoleButtonClick = (event) => {
     const { id } = event.target;
-    if (id !== 'company') {
-      dispatch(updateCompanyId(''));
+    if (id !== "company") {
+      dispatch(updateCompanyId(""));
     }
     setSelectedButton(id);
     dispatch(updateUserRole(id));
@@ -67,7 +66,7 @@ function Signup() {
     role,
     userCompanyId,
   } = useSelector((state) => state.signup);
-  const isCompanyUser = role === 'company';
+  const isCompanyUser = role === "company";
 
   useEffect(() => {
     const fetchCompanies = async () => {
@@ -94,7 +93,7 @@ function Signup() {
     await createUser(user)
       .then((res) => {
         console.log(res);
-        navigate('/signin');
+        navigate("/signin");
       })
       .catch((err) => {
         console.log(err);
@@ -165,7 +164,7 @@ function Signup() {
               name="role"
               label="Job Seeker"
               onChange={handleRoleButtonClick}
-              checked={selectedButton === 'user'}
+              checked={selectedButton === "user"}
             />
             <Form.Check
               type="radio"
@@ -173,7 +172,7 @@ function Signup() {
               name="role"
               label="Web Admin"
               onChange={handleRoleButtonClick}
-              checked={selectedButton === 'admin'}
+              checked={selectedButton === "admin"}
             />
             <Form.Check
               type="radio"
@@ -181,7 +180,7 @@ function Signup() {
               name="role"
               label="Company"
               onChange={handleRoleButtonClick}
-              checked={selectedButton === 'company'}
+              checked={selectedButton === "company"}
             />
           </div>
 

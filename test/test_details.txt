@@ -1,1 +1,21 @@
 start of test:
+1)	User Experience Testing:
+Job Seeker Perspective:
+Evaluate sign-up/sign-in/sign-out and profile creation/edit function.
+Test job search, apply for jobs and save jobs processes.
+Verify job posts/applied jobs/saved jobs clearly shown in the home page
+Employer Perspective:
+Verify company profiles and jobs posted
+Web Admin Perspective:
+Test user and content management in the admin panel, including managing functions (delete user/company)
+2)	Front End/Website Responsiveness Testing:
+Cross-Browser and Mobile Testing:
+Ensure compatibility with different browsers and mobile devices of all screen sizes.
+Verify readability and functionality on smaller screens.
+Resolution Testing:
+Ensure adaptability to different screen resolutions.
+Verify content accessibility and visual appeal.
+ 
+3)	Database Testing (please refer to the JSON file in Github: https://github.com/yanyan-huang/leanin-react-web-app)
+
+Tested different requests for the database using Postman, including but not limited to actions such as signup (POST), updating user information (PUT), retrieving a user by ID (GET), and more. For additional information, please consult the screenshot and the JSON file located in the test folder: https://github.com/yanyan-huang/leanin-react-web-app/tree/master/test 
