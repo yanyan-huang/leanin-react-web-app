@@ -2,8 +2,15 @@
 Instructor: Shivakumar Mathapathi
 
 ### Author:
-Created By: 
+**Created By:** 
 Yanyan Huang, Yuanhao Xu, Siran Cao, Chuanzhao Huang 
+
+**LeanIn Node server:**
+https://github.com/yanyan-huang/leanin-node-server-app
+
+**Test files:**
+You could find test files and details under the test folder
+
 
 # Getting Started with Create React App
 
