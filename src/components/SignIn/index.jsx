@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
