@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { findAllUsersThunk } from '../../services/user-thunk.js';
-import UserItem from './userListItem.jsx';
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { findAllUsersThunk } from "../../services/user-thunk.js";
+import UserItem from "./userListItem.jsx";
 
 function Admin() {
   const { users } = useSelector((state) => state.users);
@@ -9,7 +9,7 @@ function Admin() {
   useEffect(() => {
     dispatch(findAllUsersThunk());
   }, []);
-  console.log('From Admin: ', users);
+  console.log("From Admin: ", users);
 
   return (
     <div className="container">

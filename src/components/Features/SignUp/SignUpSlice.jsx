@@ -1,5 +1,5 @@
-import { createSlice } from '@reduxjs/toolkit';
-import COMPANY_ID from '../../../constants/company';
+import { createSlice } from "@reduxjs/toolkit";
+import COMPANY_ID from "../../../constants/company";
 
 const updateSubmitStatus = (state) => {
   state.submitStatus =
@@ -10,25 +10,25 @@ const updateSubmitStatus = (state) => {
     state.retypePasswordStatus;
 };
 export const signUpSlice = createSlice({
-  name: 'signup',
+  name: "signup",
   initialState: {
     firstNameStatus: false,
-    firstName: '',
+    firstName: "",
     lastNameStatus: false,
-    lastName: '',
+    lastName: "",
     emailStatus: false,
-    email: '',
+    email: "",
     passwordStatus: false,
-    password: '',
+    password: "",
     retypePasswordStatus: false,
     submitStatus: false,
-    orgnization: '',
-    userCompanyId: '',
+    orgnization: "",
+    userCompanyId: "",
   },
   reducers: {
     checkFirstName: (state, action) => {
       const name = action.payload;
-      if (name !== '' && name != null) {
+      if (name !== "" && name != null) {
         state.firstNameStatus = true;
       } else {
         state.firstNameStatus = false;
@@ -38,7 +38,7 @@ export const signUpSlice = createSlice({
     },
     checkLastName: (state, action) => {
       const name = action.payload;
-      if (name !== '' && name != null) {
+      if (name !== "" && name != null) {
         state.lastNameStatus = true;
       } else {
         state.lastNameStatus = false;
@@ -56,7 +56,7 @@ export const signUpSlice = createSlice({
     checkPassword: (state, action) => {
       const password = action.payload;
       state.password = password;
-      if (password !== '' && password != null) {
+      if (password !== "" && password != null) {
         state.passwordStatus = true;
       } else {
         state.passwordStatus = false;
