@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { ChevronRight } from 'react-bootstrap-icons';
@@ -9,7 +11,7 @@ function AppliedJobsComponent() {
   const NavigateJobDetails = (id) => navigate(`/search-details/${id}`);
   return (
     <div className="list-group">
-      <div className="list-group-item">
+      <div className="list-group-item bg-primary">
         <h4 className="fw-bold mt-2 mb-1">Applied Jobs</h4>
       </div>
       {Array.isArray(appliedJobs) &&

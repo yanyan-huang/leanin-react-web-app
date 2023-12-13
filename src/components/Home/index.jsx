@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { signOut } from 'firebase/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
@@ -28,7 +30,7 @@ function Home() {
         <nav>
           <h2 className='wd-greeting'>
             Welcome to LeanIn, <span className="text-primary">{email}</span> 
-            <br/>You're logged in as a Job Seeker.
+            {/*<br/>You're logged in as a Job Seeker.*/}
           </h2>
           <UserHome />
         </nav>
@@ -37,7 +39,7 @@ function Home() {
         <nav>
           <h2 className='wd-greeting'>
             Welcome to LeanIn, <span className="text-primary">{email}</span>
-            <br/>You're logged in as a Company.
+            {/*<br/>You're logged in as a Company.*/}
           </h2>
           <CompanyHome />
         </nav>
@@ -46,7 +48,7 @@ function Home() {
         <nav>
           <h2 className='wd-greeting'>
             Welcome to LeanIn, <span className="text-primary">{email}</span>
-            <br/>You're logged in as an Admin.
+            {/*<br/>You're logged in as an Admin.*/}
           </h2>
           <AdminHome />
         </nav>

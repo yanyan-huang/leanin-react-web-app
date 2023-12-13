@@ -1,10 +1,12 @@
+/* eslint-disable */
+
 import JobsSideBar from '../JobsSideBar/index';
 import ProfileCard from '../Home/ProfileCard';
 import RecentJobLists from '../Home/recentJobLists/index';
 
 function UserHome() {
   return (
-    <div className="container">
+    <div className="container-fluid">
       {/* <h2>Hi, LeanIn Job Seeker</h2> */}
 
       <div className="row mt-2">

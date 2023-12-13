@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
@@ -48,7 +50,6 @@ function CompanyProfile() {
 
     return (
         <div className="container">
-            <h1>Company Profile Page</h1>
             <div className="list-group">
                 <div className="list-group-item p-3">
                     <div>

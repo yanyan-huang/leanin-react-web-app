@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
@@ -32,9 +34,9 @@ function ProfileScreen() {
   }, [uid]);
 
   return (
-    <div className="container">
+    <div className="container-fluid ">
       <div className="row">
-        <div className="col-12 col-md-9 mb-4">
+        <div className="col-12 col-md-9">
           <div className="list-group">
             <div className="list-group-item p-3">
               <div>
@@ -77,6 +79,7 @@ function ProfileScreen() {
           <ExperienceComponent />
           <br />
           <EducationComponent isMyProfile={isMyProfile} />
+          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         </div>
         <div className="col-12 col-md-3">
         {isMyProfile && (

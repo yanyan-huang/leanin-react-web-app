@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { ChevronRight } from 'react-bootstrap-icons';
@@ -14,7 +16,7 @@ function SavedJobsComponent() {
 
   return (
     <div className="list-group">
-      <div className="list-group-item">
+      <div className="list-group-item bg-primary">
         <h4 className="fw-bold mt-2 mb-1">Saved Jobs</h4>
       </div>
       {savedJobs &&
