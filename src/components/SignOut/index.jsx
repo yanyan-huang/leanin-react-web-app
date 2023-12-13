@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { signOut } from "firebase/auth";

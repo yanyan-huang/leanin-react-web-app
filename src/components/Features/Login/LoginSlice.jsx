@@ -1,20 +1,20 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 const updateSubmitStatus = (state) => {
   state.submitStatus =
-    state.user_id !== '' &&
+    state.user_id !== "" &&
     state.user_id != null &&
     state.user_password != null &&
-    state.user_password !== '';
+    state.user_password !== "";
 };
 
 export const loginSlice = createSlice({
-  name: 'login',
+  name: "login",
   initialState: {
-    user_id: '',
-    user_type: '',
+    user_id: "",
+    user_type: "",
     logined: false,
-    user_password: '',
+    user_password: "",
     updateSubmitStatus: false,
   },
   reducers: {
@@ -33,8 +33,8 @@ export const loginSlice = createSlice({
       state.logined = true;
     },
     loginOut: (state) => {
-      state.user_id = '';
-      state.user_type = '';
+      state.user_id = "";
+      state.user_type = "";
       state.logined = false;
     },
   },
