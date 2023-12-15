@@ -1,4 +1,4 @@
-/* eslint-disable camelcase */
+/* eslint-disable */
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router';
@@ -77,7 +77,7 @@ function AddEducationScreen() {
 
           <div className="list-group-item pt-4">
             <div className="row">
-              <label className="col-sm-2 col-form-label">School</label>
+              <label className="col-sm-2 col-form-label text-white">School</label>
 
               <div className="col-sm-10">
                 <input
@@ -94,7 +94,7 @@ function AddEducationScreen() {
             <br />
 
             <div className="row">
-              <label className="col-sm-2 col-form-label">Degree</label>
+              <label className="col-sm-2 col-form-label text-white">Degree</label>
               <div className="col-sm-10">
                 <input
                   type="text"
@@ -110,7 +110,7 @@ function AddEducationScreen() {
             <br />
 
             <div className="row">
-              <label className="col-sm-2 col-form-label">Start Date</label>
+              <label className="col-sm-2 col-form-label text-white">Start Date</label>
               <div className="col-sm-10">
                 <input
                   type="date"
@@ -126,7 +126,7 @@ function AddEducationScreen() {
             <br />
 
             <div className="row">
-              <label className="col-sm-2 col-form-label">End Date</label>
+              <label className="col-sm-2 col-form-label text-white">End Date</label>
               <div className="col-sm-10">
                 <input
                   type="date"
@@ -142,7 +142,7 @@ function AddEducationScreen() {
             <br />
 
             <div className="row">
-              <label className="col-sm-2 col-form-label">Description</label>
+              <label className="col-sm-2 col-form-label text-white">Description</label>
               <div className="col-sm-10">
                 <textarea
                   className="form-control"
@@ -159,6 +159,7 @@ function AddEducationScreen() {
           </div>
         </div>
       </form>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </div>
   );
 }

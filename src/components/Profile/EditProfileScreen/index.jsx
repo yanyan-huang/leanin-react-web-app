@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React, {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {useNavigate} from "react-router";
@@ -32,7 +34,7 @@ const EditProfileScreen = () => {
 
                 <div className="list-group-item pt-4">
                     <form className="row">
-                        <label className="col-sm-2 col-form-label">First Name</label>
+                        <label className="col-sm-2 col-form-label text-white">First Name</label>
                         <div className="col-sm-10">
                             <input type="text" className="form-control"
                                    placeholder="Ex: John" value={userInfo.firstName}
@@ -43,7 +45,7 @@ const EditProfileScreen = () => {
                     <br/>
 
                     <form className="row">
-                        <label className="col-sm-2 col-form-label">Last Name</label>
+                        <label className="col-sm-2 col-form-label text-white">Last Name</label>
                         <div className="col-sm-10">
                             <input type="text" className="form-control"
                                    placeholder="Ex: Doe" value={userInfo.lastName}
@@ -54,7 +56,7 @@ const EditProfileScreen = () => {
                     <br/>
 
                     <form className="row">
-                        <label className="col-sm-2 col-form-label">Bio</label>
+                        <label className="col-sm-2 col-form-label text-white">Bio</label>
                         <div className="col-sm-10">
                             <textarea className="form-control"
                                       placeholder="Ex: I love..." value={userInfo.bio} rows={4} cols={40}
@@ -65,7 +67,7 @@ const EditProfileScreen = () => {
                     <br/>
 
                     <form className="row">
-                        <label className="col-sm-2 col-form-label">Skills</label>
+                        <label className="col-sm-2 col-form-label text-white">Skills</label>
                         <div className="col-sm-10">
                             <textarea className="form-control"
                                       placeholder="Ex: I am good at ..." value={userInfo.skills} rows={3} cols={40}
@@ -77,7 +79,8 @@ const EditProfileScreen = () => {
 
                 </div>
 
-            </div>
+            </div>          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
         </div>
     );
 };

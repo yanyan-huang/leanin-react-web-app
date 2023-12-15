@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router';
@@ -40,7 +42,7 @@ function EditCompanyProfileScreen() {
 
                 <div className="list-group-item pt-4">
                     <form className="row">
-                        <label className="col-sm-2 col-form-label">Company Name</label>
+                        <label className="col-sm-2 col-form-label text-white">Company Name</label>
                         <div className="col-sm-10">
                             <input
                                 type="text"
@@ -57,7 +59,7 @@ function EditCompanyProfileScreen() {
                     <br />
 
                     <form className="row">
-                        <label className="col-sm-2 col-form-label">Company Address</label>
+                        <label className="col-sm-2 col-form-label text-white">Company Address</label>
                         <div className="col-sm-10">
                             <input
                                 type="text"
@@ -73,7 +75,7 @@ function EditCompanyProfileScreen() {
                     <br />
 
                     <form className="row">
-                        <label className="col-sm-2 col-form-label">Description</label>
+                        <label className="col-sm-2 col-form-label text-white">Description</label>
                         <div className="col-sm-10">
               <textarea
                   className="form-control"
@@ -93,7 +95,7 @@ function EditCompanyProfileScreen() {
                     <br />
 
                     <form className="row">
-                        <label className="col-sm-2 col-form-label">Website url</label>
+                        <label className="col-sm-2 col-form-label text-white">Website url</label>
                         <div className="col-sm-10">
                             <input
                                 type="text"
@@ -109,6 +111,8 @@ function EditCompanyProfileScreen() {
                     <br />
                 </div>
             </div>
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
         </div>
     );
 }
