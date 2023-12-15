@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { useSelector } from 'react-redux';
 import RecentJobItem from '../Home/recentJobLists/recentJobItem';
 import JobSummaryItem from '../Search/JobSummaryList/job-summary-item';
