@@ -5,12 +5,26 @@ Instructor: Shivakumar Mathapathi
 **Created By:** 
 Yanyan Huang, Yuanhao Xu, Siran Cao, Chuanzhao Huang 
 
+ ### Why?
+---
+We want to create a job application site similar to LinkedIn. We want to create a site that allows users to create a profile, search for jobs, and apply for jobs. We want to create a site that allows employers to post jobs and search for candidates.:
+
+### Online Demo
+---
+Use it online: [Firebase deployed instance](https://my-firebase-project-9e554.web.app)
+
+### UML Diagram and System Architecture
+---
+
+![Imgur](https://i.imgur.com/srJnNxL.png)
+
+![Imgur](https://i.imgur.com/PiLUJH8.jpg)
+
 **LeanIn Node server:**
 https://github.com/yanyan-huang/leanin-node-server-app
 
 **Test files:**
 You could find test files and details under the test folder
-
 
 # Getting Started with Create React App
 
