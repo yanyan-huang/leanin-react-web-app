@@ -1,6 +1,3 @@
-# CS5500 Foundation of Software Engineering
-Instructor: Shivakumar Mathapathi
-
 ### Author:
 Yanyan Huang, Yuanhao Xu, Siran Cao, Chuanzhao Huang 
 
